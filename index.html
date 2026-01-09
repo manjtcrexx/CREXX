@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LOGIQ - AI Tools Dashboard & YouTube Automation Learning Platform by Manjit from Nepal">
+    <meta name="keywords" content="YouTube Automation, AI Tools, Nepal, Content Creator, Typing Practice, Smart Notes, AI Chatbot">
+    <meta name="author" content="Manjit | LOGIQ">
+    <title>LOGIQ Dashboard - AI Tools & YouTube Automation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body class="dark-mode">
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🚀</div>
+                <div class="logo-text">
+                    <span class="logo-main">LOGIQ</span>
+                    <span class="logo-sub">by Manjit</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="explore.html" class="nav-link">
+                    <i class="fas fa-play-circle"></i> YouTube Course
+                </a>
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-user"></i> About
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                
+                <!-- Theme Toggle Switch -->
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-checkbox">
+                        <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                        <div class="slider round">
+                            <div class="sun">☀️</div>
+                            <div class="moon">🌙</div>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="user-info">
+                    <i class="fas fa-map-marker-alt"></i> Nepal
+                </div>
+            </div>
+            
+            <button class="nav-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-content">
+                    <h1 class="welcome-title animate-typing">
+                        <span class="text-gradient">Welcome to LOGIQ</span>
+                    </h1>
+                    <p class="welcome-subtitle">AI Tools Dashboard & YouTube Automation Platform</p>
+                    
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3>Manjit</h3>
+                            <div class="user-badges">
+                                <span class="badge badge-creator">
+                                    <i class="fas fa-video"></i> Content Creator
+                                </span>
+                                <span class="badge badge-student">
+                                    <i class="fas fa-graduation-cap"></i> +2 Student
+                                </span>
+                                <span class="badge badge-nepal">
+                                    <i class="fas fa-flag"></i> Nepal
+                                </span>
+                            </div>
+                            <div class="user-stats">
+                                <div class="stat">
+                                    <div class="stat-number">1+</div>
+                                    <div class="stat-label">Month Experience</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Projects</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Learning</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="welcome-cta">
+                        <a href="explore.html" class="btn btn-primary pulse">
+                            <i class="fas fa-rocket"></i> Start YouTube Automation Course
+                        </a>
+                        <a href="#tools" class="btn btn-secondary">
+                            <i class="fas fa-tools"></i> Explore AI Tools
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Tools Dashboard -->
+            <section id="tools" class="tools-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-tools"></i> Interactive AI Tools
+                    </h2>
+                    <p class="section-subtitle">Practice, Create & Learn with Smart Tools</p>
+                </div>
+                
+                <div class="tools-grid">
+                    <!-- Tool 1: Typing Practice -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon typing-icon">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <h3>Typing Practice</h3>
+                            <span class="tool-status active">Live</span>
+                        </div>
+                        
+                        <div class="tool-body">
+                            <div class="typing-display" id="typingText">
+                                Start typing practice to improve your speed and accuracy!
+                            </div>
+                            
+                            <div class="typing-input-container">
+                                <textarea 
+                                    id="typingInput" 
+                                    class="typing-input" 
+                                    placeholder="Start typing here exactly as shown above..."
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            
+                            <div class="typing-stats">
+                                <div class="stat">
+                                    <div class="stat-label">Speed</div>
+                                    <div class="stat-value" id="typingSpeed">0 WPM</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-label">Accuracy</div>
+                                    <div class="stat-value" id="typingAccuracy">100%</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-label">Time</div>
+                                    <div class="stat-value" id="typingTime">0s</div>
+                                </div>
+                            </div>
+                            
+                            <div class="typing-controls">
+                                <button class="btn btn-small" onclick="startTypingTest()">
+                                    <i class="fas fa-play"></i> Start Test
+                                </button>
+                                <button class="btn btn-small btn-secondary" onclick="resetTypingTest()">
+                                    <i class="fas fa-redo"></i> Reset
+                                </button>
+                                <select class="difficulty-select" id="difficulty">
+                                    <option value="easy">Easy</option>
+                                    <option value="medium" selected>Medium</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 2: Smart Notes -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon notes-icon">
+                                <i class="fas fa-sticky-note"></i>
+                            </div>
+                            <h3>Smart Notes</h3>
+                            <span class="tool-status active">Live</span>
+                        </div>
+                        
+                        <div class="tool-body">
+                            <div class="notes-controls">
+                                <button class="btn btn-small" onclick="createNewNote()">
+                                    <i class="fas fa-plus"></i> New Note
+                                </button>
+                                <div class="search-box">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" id="noteSearch" placeholder="Search notes...">
+                                </div>
+                            </div>
+                            
+                            <div class="notes-list" id="notesList">
+                                <!-- Notes will be loaded here -->
+                            </div>
+                            
+                            <div class="note-editor" id="noteEditor" style="display: none;">
+                                <input type="text" id="noteTitle" class="note-title" placeholder="Note Title">
+                                <textarea id="noteContent" class="note-content" placeholder="Start typing your note here..." rows="6"></textarea>
+                                
+                                <div class="note-actions">
+                                    <button class="btn btn-small" onclick="saveNote()">
+                                        <i class="fas fa-save"></i> Save
+                                    </button>
+                                    <button class="btn btn-small btn-secondary" onclick="cancelEdit()">
+                                        <i class="fas fa-times"></i> Cancel
+                                    </button>
+                                    <button class="btn btn-small btn-danger" onclick="deleteNote()">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="notes-stats">
+                                <span id="notesCount">0 notes saved</span>
+                                <span id="lastSaved">Not saved yet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 3: AI Chatbot -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon chatbot-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>LOGIQ Assistant</h3>
+                            <span class="tool-status active">AI Powered</span>
+                        </div>
+                        
+                        <div class="tool-body">
+                            <div class="chat-container">
+                                <div class="chat-messages" id="chatMessages">
+                                    <div class="message bot">
+                                        <div class="message-avatar">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="message-content">
+                                            Hello! I'm LOGIQ Assistant. I can help you with:
+                                            <br>• YouTube Automation tips
+                                            <br>• Content creation advice
+                                            <br>• AI tools guidance
+                                            <br>What would you like to know?
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="quick-questions">
+                                    <button class="quick-btn" onclick="askQuestion('How to start YouTube automation?')">
+                                        Start YouTube Automation
+                                    </button>
+                                    <button class="quick-btn" onclick="askQuestion('Best AI tools for content creation?')">
+                                        Best AI Tools
+                                    </button>
+                                    <button class="quick-btn" onclick="askQuestion('How to grow on YouTube?')">
+                                        YouTube Growth
+                                    </button>
+                                </div>
+                                
+                                <div class="chat-input-container">
+                                    <input 
+                                        type="text" 
+                                        id="chatInput" 
+                                        class="chat-input" 
+                                        placeholder="Ask me anything about YouTube, AI, or content creation..."
+                                        onkeypress="handleChatInput(event)"
+                                    >
+                                    <button class="chat-send" onclick="sendMessage()">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YouTube Automation Preview -->
+            <section class="youtube-preview">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fab fa-youtube"></i> YouTube Automation Course
+                    </h2>
+                    <p class="section-subtitle">Build Your Career in YouTube Automation</p>
+                </div>
+                
+                <div class="course-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Based on My Experience</h4>
+                        <p>1+ month of hands-on YouTube automation experience shared</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Practical Tools</h4>
+                        <p>Learn actual tools used by successful automation channels</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Growth Strategies</h4>
+                        <p>Proven methods to grow from 0 to monetization</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Monetization</h4>
+                        <p>Complete guide to earning from YouTube automation</p>
+                    </div>
+                </div>
+                
+                <div class="cta-box">
+                    <h3>Ready to Start Your YouTube Journey?</h3>
+                    <p>Join my course based on real experience as a part-time content creator from Nepal</p>
+                    <a href="explore.html" class="btn btn-large btn-primary pulse">
+                        <i class="fas fa-play-circle"></i> Start Free Course
+                    </a>
+                </div>
+            </section>
+
+            <!-- Quick Stats -->
+            <section class="quick-stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>3 Interactive Tools</h4>
+                            <p>Practice typing, take notes, chat with AI</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Student Creator</h4>
+                            <p>+2 student creating content part-time</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>From Nepal</h4>
+                            <p>Supporting creators from developing countries</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Fast Learning</h4>
+                            <p>1 month experience to full course creation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">🚀</div>
+                    <div>
+                        <h3>LOGIQ</h3>
+                        <p>AI Tools & YouTube Automation</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="contact-info">
+                        <h4>Contact Manjit</h4>
+                        <p><i class="fas fa-envelope"></i> ulnanib@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nepal</p>
+                        <p><i class="fas fa-user-tie"></i> Part-time Content Creator</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Connect</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 LOGIQ by Manjit. All rights reserved.</p>
+                <p>From Nepal | +2 Student & Content Creator</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/chatbot.js"></script>
+    
+    <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNotes();
+            updateNotesStats();
+        });
+    </script>
+</body>
+</html>
